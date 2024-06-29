@@ -1,0 +1,47 @@
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html lang=&quot;en&quot;&gt;</p>
+<p>&lt;head&gt;</p>
+<p>&nbsp; &nbsp; &lt;meta charset=&quot;UTF-8&quot;&gt;</p>
+<p>&nbsp; &nbsp; &lt;title&gt;Tap to Earn&lt;/title&gt;</p>
+<p>&nbsp; &nbsp; &lt;style&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; #coin {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; position: absolute;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; width: 100px;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; height: 100px;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-image: url(&apos;coin.png&apos;);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-size: cover;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; #score {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; position: absolute;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; top: 20px;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; left: 20px;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; font-size: 24px;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p>&nbsp; &nbsp; &lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+<p>&lt;body&gt;</p>
+<p>&nbsp; &nbsp; &lt;div id=&quot;coin&quot;&gt;&lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &lt;*** id=&quot;score&quot;&gt;Score: 0&lt;/div&gt;</p>
+<p>&nbsp; &nbsp; &lt;script&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; let score = 0;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; ***** coin = document.getElementById(&apos;coin&apos;);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; ***** scoreBoard = document.getElementById(&apos;score&apos;);</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; function moveCoin() {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const x = Math.random() * (window.innerWidth - 100);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const y = Math.random() * (window.*********** - 100);</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; coin.style.left = `${x}px`;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; coin.style.top = `${y}px`;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; }</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; coin.addEventListener(&apos;click&apos;, () =&gt; {</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ***** += 1;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; scoreBoard.textContent = `Score: ${score}`;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; moveCoin();</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; });</p>
+<p><br></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; moveCoin();</p>
+<p>&nbsp; &nbsp; &lt;/script&gt;</p>
+<p>&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+<div style="color: red">Word to HTML trial - please <a href="https://wordtohtml.net/site/payment">Go PRO</a> to get whole HTML.</div>
